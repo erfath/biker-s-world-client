@@ -19,12 +19,12 @@ const Item = ({ item }) => {
                 </div>
                 <div className='p-2'>
                 <p><strong>Supplier's Name: </strong>{supplier}</p>
-                <p><strong>Available: </strong>{quantity}</p>
+                <p><strong>Available Quantity: </strong>{quantity}</p>
                 <p>{description}</p>
                 </div>
                 <div className='d-flex justify-content-around'>
-                    <button className='item-btn'>Update</button>
-                    <button onClick={()=>navigateToItemDetails(id)} className='item-btn'>Select</button>
+                    <button className='item-btn w-25'>Select</button>
+                    <button onClick={()=>navigateToItemDetails(id)} className='item-btn w-25'>Update</button>
                 </div>
             </div>
         </div>

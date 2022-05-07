@@ -52,5 +52,23 @@
         "quantity": "32",
         "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa",
         "img": "https://i.ibb.co/Mp1fTHd/goog1.jpg"
+    },
+    {
+        "id": 7,
+        "name": "CHOCOLATE GOGGLE BW-601",
+        "price": "300",
+        "supplier": "Sharuk Khan",
+        "quantity": "32",
+        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa",
+        "img": "https://i.ibb.co/Mp1fTHd/goog1.jpg"
+    },
+    {
+        "id": 8,
+        "name": "CHOCOLATE GOGGLE BW-601",
+        "price": "300",
+        "supplier": "Sharuk Khan",
+        "quantity": "32",
+        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa",
+        "img": "https://i.ibb.co/Mp1fTHd/goog1.jpg"
     }
 ]
