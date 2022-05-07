@@ -45,11 +45,14 @@ const Register = () => {
                 <Form.Group className="mb-3" controlId="formBasicPassword">
                     <Form.Control type="password" name='password' placeholder="Password" />
                 </Form.Group>
-                <p><span>Already have an account?</span> <Link to='/login' onClick={navigateToLogin} className='text-decoration-none'>Please Login</Link> </p>
                 <Button className='bg-primary w-100' type="submit">
                     Submit
                 </Button>
+                <div className='text-center'>
+            <p><span>Already have an account?</span> <Link to='/login' onClick={navigateToLogin} className='text-decoration-none'>Please Login</Link> </p>
+            </div>
             </Form>
+            
         </div>
     );
 };

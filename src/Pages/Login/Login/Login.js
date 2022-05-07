@@ -3,6 +3,7 @@ import { Button, Form } from 'react-bootstrap';
 import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../../firebase.init';
+import SocialLogin from '../SocialLogin/SocialLogin';
 import './Login.css'
 
 const Login = () => {
@@ -25,8 +26,8 @@ const Login = () => {
     const navigateToRegister = (event) => {
         navigate('/register')
     }
-    if(user){
-        navigate(from, {replace : true});
+    if (user) {
+        navigate(from, { replace: true });
     }
     return (
         <div className='form'>
@@ -38,11 +39,15 @@ const Login = () => {
                 <Form.Group className="mb-3" controlId="formBasicPassword">
                     <Form.Control type="password" name='password' placeholder="Password" />
                 </Form.Group>
-                <p> <span>Forgot Password?</span> <span>Don't have an account?</span> <Link to='/register' onClick={navigateToRegister} className='text-decoration-none'>Please Register</Link> </p>
                 <Button className='bg-primary w-100' type="submit">
                     Submit
                 </Button>
+                <div className='text-center'>
+                    <p> <span>Forgot Password?</span> <span>Don't have an account?</span> <Link to='/register' onClick={navigateToRegister} className='text-decoration-none'>Please Register</Link> </p>
+                </div>
+                <SocialLogin></SocialLogin>
             </Form>
+
         </div>
     );
 };
