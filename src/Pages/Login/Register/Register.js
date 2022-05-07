@@ -5,7 +5,6 @@ import auth from '../../../firebase.init';
 import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
 
 const Register = () => {
-    const [agree, setAgree] = useState(false);
     const [
         createUserWithEmailAndPassword,
         user,
@@ -25,16 +24,17 @@ const Register = () => {
         const name = event.target.name.value;
         const email = event.target.email.value;
         const password = event.target.password.value;
-        // const agree = event.target.terms.checked;
 
         await createUserWithEmailAndPassword(email, password);
         // await updateProfile({ displayName: name });
         // console.log('Updated profile');
-        // navigate('/home');
+        navigate('/login');
+        console.log(email, password)
+        
     }
     return (
         <div className='form'>
-            <h2 className='text-center mx-auto w-50 p-2'>Please register here</h2>
+            <h2 className='text-center mx-auto w-50 p-2'>Please Register Here</h2>
             <Form onSubmit={handleRegister} className='formField w-50 mx-auto p-2'>
                 <Form.Group className="mb-3" controlId="formBasicEmail">
                     <Form.Control type="text" name='name' placeholder="Your Name" />
@@ -46,7 +46,7 @@ const Register = () => {
                     <Form.Control type="password" name='password' placeholder="Password" />
                 </Form.Group>
                 <Button className='bg-primary w-100' type="submit">
-                    Submit
+                    Register
                 </Button>
                 <div className='text-center'>
             <p><span>Already have an account?</span> <Link to='/login' onClick={navigateToLogin} className='text-decoration-none'>Please Login</Link> </p>

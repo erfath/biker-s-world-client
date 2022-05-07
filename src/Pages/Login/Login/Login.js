@@ -1,6 +1,6 @@
 import React from 'react';
 import { Button, Form } from 'react-bootstrap';
-import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import { useSignInWithEmailAndPassword, useUpdatePassword } from 'react-firebase-hooks/auth';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../../firebase.init';
 import SocialLogin from '../SocialLogin/SocialLogin';
@@ -12,7 +12,8 @@ const Login = () => {
         user,
         loading,
         error,
-    ] = useSignInWithEmailAndPassword(auth);
+    ] = useSignInWithEmailAndPassword(auth, {sendEmailVerification : true});
+    const [updatePassword, updating] = useUpdatePassword(auth);
     const navigate = useNavigate();
     const location = useLocation();
     let from = location.state?.from?.pathname || '/';
@@ -40,7 +41,7 @@ const Login = () => {
                     <Form.Control type="password" name='password' placeholder="Password" />
                 </Form.Group>
                 <Button className='bg-primary w-100' type="submit">
-                    Submit
+                    Login
                 </Button>
                 <div className='text-center'>
                     <p> <span>Forgot Password?</span> <span>Don't have an account?</span> <Link to='/register' onClick={navigateToRegister} className='text-decoration-none'>Please Register</Link> </p>
