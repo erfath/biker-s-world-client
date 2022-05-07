@@ -1,0 +1,10 @@
+.formField{
+    border: 5px solid grey;
+}
+.form h2{
+    background-color: grey;
+    width: 50%;
+    margin-bottom: 0%;
+    color: white;
+    margin-top: 10px;
+}

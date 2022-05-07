@@ -1,0 +1,56 @@
+[
+    {
+        "id": 1,
+        "name": "PRIX HELMET BW-101",
+        "price": "200",
+        "supplier": "Badsha Khan",
+        "quantity": "65",
+        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
+        "img": "https://i.ibb.co/g74kk8K/bw3.jpg"
+    },
+    {
+        "id": 2,
+        "name": "RED BOOTS BW-201",
+        "price": "300",
+        "supplier": "Mr Grey",
+        "quantity": "34",
+        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
+        "img": "https://i.ibb.co/7X2KP4f/boot2.jpg"
+    },
+    {
+        "id": 3,
+        "name": "BLACK JACKET BW-301",
+        "price": "150",
+        "supplier": "Jonny Deep",
+        "quantity": "44",
+        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
+        "img": "https://i.ibb.co/6sZTxQy/jac1.jpg"
+    },
+    {
+        "id": 4,
+        "name": "THIN GLOVES BW-401",
+        "price": "180",
+        "supplier": "Jalil Brown",
+        "quantity": "63",
+        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
+        "img": "https://i.ibb.co/HxVpp23/glovs1.jpg"
+    },
+    {
+        "id": 5,
+        "name": "ASH COMBO BW-501",
+        "price": "140",
+        "supplier": "Salman Bhai",
+        "quantity": "76",
+        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
+        "img": "https://i.ibb.co/f97qtBt/combo1.jpg"
+    },
+    {
+        "id": 6,
+        "name": "CHOCOLATE GOGGLE BW-601",
+        "price": "300",
+        "supplier": "Sharuk Khan",
+        "quantity": "32",
+        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa",
+        "img": "https://i.ibb.co/Mp1fTHd/goog1.jpg"
+    }
+]
