@@ -1,22 +1,33 @@
 import React, { useState } from 'react';
 import { Button, Form } from 'react-bootstrap';
 import { Link, useNavigate } from 'react-router-dom';
+import auth from '../../../firebase.init';
+import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
 
 const Register = () => {
     const [agree, setAgree] = useState(false);
+    const [
+        createUserWithEmailAndPassword,
+        user,
+        loading,
+        error,
+    ] = useCreateUserWithEmailAndPassword(auth, { sendEmailVerification: true });
     const navigate = useNavigate();
 
     const navigateToLogin = () => {
         navigate('/login')
     }
-    const handleRegister= async event =>{
+    if (user) {
+        navigate('/login')
+    }
+    const handleRegister = async event => {
         event.preventDefault();
         const name = event.target.name.value;
         const email = event.target.email.value;
         const password = event.target.password.value;
         // const agree = event.target.terms.checked;
-        
-        // await createUserWithEmailAndPassword(email, password);
+
+        await createUserWithEmailAndPassword(email, password);
         // await updateProfile({ displayName: name });
         // console.log('Updated profile');
         // navigate('/home');
@@ -25,7 +36,7 @@ const Register = () => {
         <div className='form'>
             <h2 className='text-center mx-auto w-50 p-2'>Please register here</h2>
             <Form onSubmit={handleRegister} className='formField w-50 mx-auto p-2'>
-            <Form.Group className="mb-3" controlId="formBasicEmail">
+                <Form.Group className="mb-3" controlId="formBasicEmail">
                     <Form.Control type="text" name='name' placeholder="Your Name" />
                 </Form.Group>
                 <Form.Group className="mb-3" controlId="formBasicEmail">
