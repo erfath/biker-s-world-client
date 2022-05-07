@@ -6,12 +6,12 @@ import {getAuth} from 'firebase/auth';
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyB-sI1Ya3U4uKEr1o9pnHzowSwpVPgXeUI",
-  authDomain: "bikers-world-43bda.firebaseapp.com",
-  projectId: "bikers-world-43bda",
-  storageBucket: "bikers-world-43bda.appspot.com",
-  messagingSenderId: "128994155156",
-  appId: "1:128994155156:web:ea237a6bc35c34aabc3281"
+  apiKey:process.env.REACT_APP_apiKey,
+  authDomain:process.env.REACT_APP_authDomain,
+  projectId:process.env.REACT_APP_projectId,
+  storageBucket:process.env.REACT_APP_storageBucket,
+  messagingSenderId:process.env.REACT_APP_messagingSenderId,
+  appId:process.env.REACT_APP_appId,
 };
 
 // Initialize Firebase
