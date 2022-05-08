@@ -1,6 +1,7 @@
+import { sendPasswordResetEmail } from 'firebase/auth';
 import React from 'react';
 import { Button, Form } from 'react-bootstrap';
-import { useSignInWithEmailAndPassword, useUpdatePassword } from 'react-firebase-hooks/auth';
+import { useSendPasswordResetEmail, useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../../firebase.init';
 import SocialLogin from '../SocialLogin/SocialLogin';
@@ -12,8 +13,8 @@ const Login = () => {
         user,
         loading,
         error,
-    ] = useSignInWithEmailAndPassword(auth, {sendEmailVerification : true});
-    const [updatePassword, updating] = useUpdatePassword(auth);
+    ] = useSignInWithEmailAndPassword(auth, { sendEmailVerification: true });
+    const [sendPasswordResetEmail, sending] = useSendPasswordResetEmail(auth);
     const navigate = useNavigate();
     const location = useLocation();
     let from = location.state?.from?.pathname || '/';
@@ -30,6 +31,12 @@ const Login = () => {
     if (user) {
         navigate(from, { replace: true });
     }
+
+    const resetPassword = async event => {
+        const email = event.target.email.value;
+        await sendPasswordResetEmail(email);
+        alert('Sent email');
+    }
     return (
         <div className='form'>
             <h2 className='text-center mx-auto w-50 p-2'>Login</h2>
@@ -44,7 +51,7 @@ const Login = () => {
                     Login
                 </Button>
                 <div className='text-center'>
-                    <p> <span>Forgot Password?</span> <span>Don't have an account?</span> <Link to='/register' onClick={navigateToRegister} className='text-decoration-none'>Please Register</Link> </p>
+                    <p> <Link to='/register' onClick={resetPassword} className='text-danger text-decoration-none'>Reset Password?</Link> <span>Don't have an account?</span> <Link to='/register' onClick={navigateToRegister} className='text-decoration-none'>Please Register</Link> </p>
                 </div>
                 <SocialLogin></SocialLogin>
             </Form>
