@@ -1,4 +1,15 @@
+# My website name: Bikers World BD
+# Live link: https://bikers-world-43bda.web.app/
+### about my website
+Its a simple warehouse management system. user can log in. after logged in he can add any items or delete any items. user can logged in by google. 
+# features
+*I didn't implement any new method.
+*i just followed jhankar vaiya's videos. 
+*at this stage i am feeling that i am a empty book. 
+*because i did all of the code by watching videos. 
+
 # Getting Started with Create React App
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
