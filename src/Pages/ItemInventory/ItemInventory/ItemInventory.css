@@ -1,0 +1,12 @@
+/*Making responsive */
+
+@media only screen and (max-width: 576px) {
+    .inventory-container{
+        
+    }
+}
+@media only screen and (min-width: 577px) and (max-width: 992px){
+    .inventory-container{
+        
+    }
+}
