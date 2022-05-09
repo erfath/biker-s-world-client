@@ -1,33 +1,36 @@
 import React from 'react';
 import { Button, Form } from 'react-bootstrap';
+import { useForm } from 'react-hook-form';
 import './AddItem.css'
 
 const AddItem = () => {
+    const { register, handleSubmit } = useForm();
+    const onSubmit = (data) => {
+        console.log(data)
+        const url = `http://localhost:5000/inventory`;
+        fetch(url, {
+            method : 'POST',
+            headers: {
+                'content-type': 'application/json'
+            },
+            body: JSON.stringify(data)
+        })
+        .then(res=>res.json())
+        .then(result=>{
+            console.log(result)
+        })
+    };
     return (
         <div className='form'>
             <h2 className='text-center mx-auto w-50 p-2'>Add Item</h2>
-            <Form className='formField w-50 mx-auto p-2'>
-                <Form.Group className="mb-3">
-                    <Form.Control type="text" placeholder="Item Name" required />
-                </Form.Group>
-                <Form.Group className="mb-3" >
-                    <Form.Control type="text" placeholder="Photo URL" required />
-                </Form.Group>
-                <Form.Group className="mb-3" >
-                    <Form.Control type="text" placeholder="Price" required />
-                </Form.Group>
-                <Form.Group className="mb-3">
-                    <Form.Control type="text" placeholder="Quantity" required />
-                </Form.Group>
-                <Form.Group className="mb-3">
-                    <Form.Control type="text" placeholder="Supplyer's name" required />
-                </Form.Group>
-                <Form.Group className="mb-3">
-                    <Form.Control type="text" placeholder="Short Description" required />
-                </Form.Group>
-                <Button className='bg-primary w-100' type="submit">
-                    Submit
-                </Button>
+            <Form onSubmit={handleSubmit(onSubmit)} className='formField w-50 mx-auto p-2 d-flex flex-column'>
+                <input className='mb-2' placeholder="Item Name" {...register("name", { required: true, maxLength: 20 })} />
+                <input className='mb-2' placeholder="Photo URL" {...register("img")} />
+                <input className='mb-2' placeholder="Price" type="number" {...register("price")} />
+                <input className='mb-2' placeholder="Quantity" type="number" {...register("quantity")} />
+                <input className='mb-2' placeholder="Supplyer's name" {...register("supplier", { required: true, maxLength: 20 })} />
+                <textarea className='mb-2' placeholder="Short Description" {...register("description")} />
+                <input className='btn btn-primary' type="submit" value='Add Item' />
             </Form>
         </div>
     );
