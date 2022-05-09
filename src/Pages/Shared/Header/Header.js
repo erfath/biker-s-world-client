@@ -31,7 +31,7 @@ const Header = () => {
             <Nav.Link href="#deets">More deets</Nav.Link>
             {
               user ? 
-              <button onClick={handleSignout}>Signout</button>
+              <button className='btn btn-primary' onClick={handleSignout}>Signout</button>
 
               :
               <Nav.Link  href="/login">

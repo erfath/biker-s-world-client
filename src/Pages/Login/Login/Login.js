@@ -51,7 +51,7 @@ const Login = () => {
                     Login
                 </Button>
                 <div className='text-center'>
-                    <p> <Link to='/register' onClick={resetPassword} className='text-danger text-decoration-none'>Reset Password?</Link> <span>Don't have an account?</span> <Link to='/register' onClick={navigateToRegister} className='text-decoration-none'>Please Register</Link> </p>
+                    <p> <Link to='/register' onClick={resetPassword} className='text-danger text-decoration-none'>Forgot Password?</Link> <span>Don't have an account?</span> <Link to='/register' onClick={navigateToRegister} className='text-decoration-none'>Please Register</Link> </p>
                 </div>
                 <SocialLogin></SocialLogin>
             </Form>

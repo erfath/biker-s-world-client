@@ -5,7 +5,7 @@
         "price": "200",
         "supplier": "Badsha Khan",
         "quantity": "65",
-        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
+        "description": "High Quality Motorcycle Helmets From Top Brands. Order Now! Whatever your requirement, we will make every effort to source the correct item for you.",
         "img": "https://i.ibb.co/g74kk8K/bw3.jpg"
     },
     {
@@ -14,7 +14,7 @@
         "price": "300",
         "supplier": "Mr Grey",
         "quantity": "34",
-        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
+        "description": "Motorcycle boots are associated with motorcycle riders and range from above ankle to below knee boots. Whatever your requirement, I will make a Shipment next week.",
         "img": "https://i.ibb.co/7X2KP4f/boot2.jpg"
     },
     {
@@ -23,7 +23,7 @@
         "price": "150",
         "supplier": "Jonny Deep",
         "quantity": "44",
-        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
+        "description": "Jackets are associated with motorcycle riders. Very important for bikrs. Whatever your requirement, we will make every effort to source the correct item for you.",
         "img": "https://i.ibb.co/6sZTxQy/jac1.jpg"
     },
     {
@@ -32,7 +32,7 @@
         "price": "180",
         "supplier": "Jalil Brown",
         "quantity": "63",
-        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
+        "description": "Gloves are associated with motorcycle riders. Very important for bikrs. I have much stock in my warehouse. I have a shipment next monday.",
         "img": "https://i.ibb.co/HxVpp23/glovs1.jpg"
     },
     {
@@ -41,7 +41,7 @@
         "price": "140",
         "supplier": "Salman Bhai",
         "quantity": "76",
-        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
+        "description": "Jackets are associated with motorcycle riders. Very important for bikrs. Whatever your color requirement, we have huge collections of color.",
         "img": "https://i.ibb.co/f97qtBt/combo1.jpg"
     },
     {
@@ -50,25 +50,62 @@
         "price": "300",
         "supplier": "Sharuk Khan",
         "quantity": "32",
-        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa",
+        "description": "Goggles are very important for motorcycle riders. Whatever your requirement, we have huge goggles collections. You cn buy as your requirements",
         "img": "https://i.ibb.co/Mp1fTHd/goog1.jpg"
     },
     {
         "id": 7,
-        "name": "CHOCOLATE GOGGLE BW-601",
+        "name": "RED GOGGLE BW-602",
         "price": "300",
         "supplier": "Sharuk Khan",
         "quantity": "32",
-        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa",
-        "img": "https://i.ibb.co/Mp1fTHd/goog1.jpg"
+        "description": "Goggles are very important for motorcycle riders. Whatever your requirement, we have huge goggles collections. You cn buy as your requirements.",
+        "img": "https://i.ibb.co/JnTQtsP/goog3.jpg"
     },
     {
         "id": 8,
-        "name": "CHOCOLATE GOGGLE BW-601",
+        "name": "BLUE GOGGLE BW-603",
         "price": "300",
         "supplier": "Sharuk Khan",
         "quantity": "32",
-        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa",
-        "img": "https://i.ibb.co/Mp1fTHd/goog1.jpg"
+        "description": "Goggles are very important for motorcycle riders. Whatever your requirement, we have huge goggles collections. You cn buy as your requirements",
+        "img": "https://i.ibb.co/5RsrbTx/goog2.jpg"
+    },
+    {
+        "id": 9,
+        "name": "WHITE COMBO BW-502",
+        "price": "140",
+        "supplier": "Salman Bhai",
+        "quantity": "76",
+        "description": "Jackets are associated with motorcycle riders. Very important for bikrs. Whatever your requirement, we will make every effort to source the correct item for you.",
+        "img": "https://i.ibb.co/k4QHNCR/combo2.jpg"
+    },
+    {
+        "id": 10,
+        "name": "BLUE COMBO BW-503",
+        "price": "140",
+        "supplier": "Salman Bhai",
+        "quantity": "76",
+        "description": "Jackets are associated with motorcycle riders. Very important for bikrs. Whatever your color requirement, we have huge collections of color.",
+        "img": "https://i.ibb.co/z7YND9Z/combo3.jpg"
+    },
+    {
+        "id": 11,
+        "name": "WHITE HELMET BW-102",
+        "price": "200",
+        "supplier": "Badsha Khan",
+        "quantity": "65",
+        "description": "High Quality Motorcycle Helmets From Top Brands. Order Now! Whatever your requirement, we will make every effort to source the correct item for you.",
+        "img": "https://i.ibb.co/g74kk8K/bw3.jpg"
+    },
+    {
+        "id": 12,
+        "name": "RED HELMET BW-103",
+        "price": "200",
+        "supplier": "Badsha Khan",
+        "quantity": "65",
+        "description": "High Quality Motorcycle Helmets From Top Brands. Order Now! Whatever your requirement, we will make every effort to source the correct item for you.",
+        "img": "https://i.ibb.co/K699xkx/bw2.jpg"
     }
+   
 ]
