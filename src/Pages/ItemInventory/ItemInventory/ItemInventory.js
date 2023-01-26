@@ -7,7 +7,7 @@ const ItemInventory = () => {
     const { id } = useParams();
     const [item, setItem] = useState({});
     useEffect(() => {
-        const url = `http://localhost:5000/inventory/${id}`;
+        const url = `https://biker-s-world-client.onrender.com/inventory/${id}`;
         fetch(url)
             .then(res => res.json())
             .then(data => setItem(data));

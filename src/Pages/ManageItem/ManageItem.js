@@ -12,7 +12,7 @@ const ManageItem = () => {
     const handledelete = id => {
         const proceed = window.confirm('Are You Sure?')
         if (proceed) {
-            const url = `http://localhost:5000/inventory/${id}`
+            const url = `https://biker-s-world-client.onrender.com/inventory/${id}`
             fetch(url, {
                 method: "DELETE"
             })
