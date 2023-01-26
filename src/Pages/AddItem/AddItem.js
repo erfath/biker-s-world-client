@@ -7,7 +7,7 @@ const AddItem = () => {
     const { register, handleSubmit } = useForm();
     const onSubmit = (data) => {
         console.log(data)
-        const url = `https://biker-s-world-client.onrender.com/inventory`;
+        const url = `https://bikebd-server.onrender.com/inventory`;
         fetch(url, {
             method : 'POST',
             headers: {

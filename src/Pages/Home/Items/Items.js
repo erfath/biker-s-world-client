@@ -11,7 +11,7 @@ const Items = () => {
     const [items, setItems] = useState([]);
 
     useEffect(()=>{
-        fetch('https://biker-s-world-client.onrender.com/inventory')
+        fetch('https://bikebd-server.onrender.com/inventory')
         .then(res=>res.json())
         .then(data=>setItems(data.slice(0,6)));
     },[]);
