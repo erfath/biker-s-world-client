@@ -18,6 +18,9 @@ const Items = () => {
     return (
         <div className='container'>
             <h2 className='text-center m-5'>My Products</h2>
+            <h2 className='text-center m-5'>My Products</h2>
+            <h2 className='text-center m-5'>My Products</h2>
+            <h2 className='text-center m-5'>My Products</h2>
           <div className='items-container'>
           {
                 items.map(item=> <Item
